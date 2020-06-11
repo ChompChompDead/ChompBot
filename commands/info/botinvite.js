@@ -1,5 +1,5 @@
 const {MessageEmbed} = require("discord.js")
-module.exports-{
+module.exports={
     name:"botinvite",
     category:"info",
     description: "A link to invite ChompBot",
