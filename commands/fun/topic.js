@@ -26,7 +26,7 @@ module.exports={
         let Embed = new MessageEmbed()
         .setTitle('**A New Chat Topic**')
         .setColor(1752220)
-        .setDescription('**Your Answer: **'+Response)
+        .setDescription('**The Topic: **'+Response)
             message.channel.send(Embed)
         }
 
