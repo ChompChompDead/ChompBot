@@ -12,7 +12,6 @@ module.exports={
         .addField('**ℹ️ Info commands:**', '`ping, help, avatar`')
         .addField('**⚒️ Moderation Commands:**', '`kick, ban (work in progress)`')
         .addField('**😀 Fun Commands:**', '`giveaway, 8ball, clownspam, meme, poll`')
-        .addField('**💰 Economy Commands:**', '`balance`')
         .setFooter('🤡A ChompBot Message | I am cool.🤡')
         .setColor(1752220)
         message.channel.send(Embed)
