@@ -11,7 +11,7 @@ module.exports={
         .setThumbnail('https://gyazo.com/69a62985db980a4902f76098e3571786.png')
         .addField('**ℹ️ Info commands:**', '`ping, help, avatar`')
         .addField('**⚒️ Moderation Commands:**', '`kick, ban (work in progress)`')
-        .addField('**😀 Fun Commands:**', '`giveaway, 8ball, clownspam, meme, poll`')
+        .addField('**😀 Fun Commands:**', '`giveaway, 8ball, clownspam, meme, poll, topic`')
         .setFooter('🤡A ChompBot Message | I am cool.🤡')
         .setColor(1752220)
         message.channel.send(Embed)
