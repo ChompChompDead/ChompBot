@@ -9,7 +9,7 @@ module.exports={
         .setAuthor('My Prefix is c!')
         .setTitle('**ChompBot Help Commands:**')
         .setThumbnail('https://gyazo.com/69a62985db980a4902f76098e3571786.png')
-        .addField('**ℹ️ Info commands:**', '`ping, help, avatar, userinfo`')
+        .addField('**ℹ️ Info commands:**', '`ping, help, avatar, userinfo, botinvite`')
         .addField('**⚒️ Moderation Commands:**', '`kick, ban (work in progress)`')
         .addField('**😀 Fun Commands:**', '`giveaway, 8ball, clownspam, meme, poll`')
         .setFooter('🤡A ChompBot Message | I am cool.🤡')
