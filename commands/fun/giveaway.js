@@ -20,7 +20,7 @@ module.exports = {
     let channel = message.mentions.channels.first();
     if (!channel)
       return message.channel.send(
-        `I could not find that channel in the guild.`
+        `Please enter a vaild channel.`
       );
     if (!message.member.permissions.has("MANAGE_MESSAGES")) return message.channel.send('You do not have permissions for this command.')
     let prize = args.slice(2).join(" ");
