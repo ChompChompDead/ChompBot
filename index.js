@@ -13,8 +13,18 @@ bot.catergories = fs.readdirSync("./commands/");
 ["command"].forEach(handler =>{
     require(`./handlers/${handler}`)(bot);
 })
+const activities_list = [
+    "BETA | c!help", 
+    "Version 0.1 | c!help",
+    "eating pancakes", 
+    "being a bot"
+    ];
+
 bot.on('ready', () => {
-    bot.user.setActivity(`Version 0.1 | ${prefix}help`, {type: 'WATCHING'})
+    setInterval(() => {
+        const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
+        bot.user.setActivity(activities_list[index]);
+    }, 10000); 
     console.log(`${bot.user.username} is now online!`)
 });
 bot.on('message', async message=>{
@@ -30,4 +40,4 @@ bot.on('message', async message=>{
     if(command) command.run(bot,message,args)
 })
 
-bot.login(process.env.token)
+bot.login(process.env.token);
