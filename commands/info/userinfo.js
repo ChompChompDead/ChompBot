@@ -16,7 +16,7 @@ module.exports = {
       Embed.setThumbnail(message.author.displayAvatarURL());
       Embed.setColor(1752220);
       Embed.setDescription(
-        `**Joined:** (MM/DD/YYYY) ${formatDate(message.member.joinedAt)}\n**User ID:** ${
+        `**Joined Server At:** (MM/DD/YYYY) ${formatDate(message.member.joinedAt)}\n**User ID:** ${
           message.author.id
         }\n**Roles:** ${roles}`
       );
@@ -30,7 +30,7 @@ module.exports = {
       Embed.setThumbnail(bot.users.cache.get(User.id).displayAvatarURL());
       Embed.setColor(1752220);
       Embed.setDescription(
-        `**Joined:** (MM/DD/YYYY) ${formatDate(User.joinedAt)}\n**User ID:** ${
+        `**Joined Server At:** (MM/DD/YYYY) ${formatDate(User.joinedAt)}\n**User ID:** ${
           User.id
         }\n**Roles:** ${roles}`
       );
