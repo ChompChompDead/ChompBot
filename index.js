@@ -14,7 +14,7 @@ bot.catergories = fs.readdirSync("./commands/");
     require(`./handlers/${handler}`)(bot);
 })
 bot.on('ready', () => {
-    bot.user.setActivity(`BETA | ${prefix}help`, {type: 'WATCHING'})
+    bot.user.setActivity(`Version 0.1 | ${prefix}help`, {type: 'WATCHING'})
     console.log(`${bot.user.username} is now online!`)
 });
 bot.on('message', async message=>{
