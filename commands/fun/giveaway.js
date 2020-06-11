@@ -29,7 +29,7 @@ module.exports = {
     let Embed = new MessageEmbed()
       .setTitle(`:tada: New giveaway! :tada:`)
       .setDescription(
-        `The Prize Is:**${prize}**\n\nReact with :tada: to enter the giveaway!\nThis Giveaway is hosted by: ${message.author}\nLook at the very bottom to see when the giveaway ends.`
+        `The Prize Is: **${prize}**\n\nReact with :tada: to enter the giveaway!\nThis Giveaway is hosted by: ${message.author}\nLook at the very bottom to see when the giveaway ends.`
       )
       .setTimestamp(Date.now() + ms(args[0]))
       .setColor(1752220);
@@ -48,7 +48,7 @@ module.exports = {
         .users.cache.filter((u) => !u.bot)
         .random();
       channel.send(
-        `The winner of the giveaway for **${prize}** is... ${winner}!`
+        `:tada: Congrats ${winner}! You have won __**${prize}**__ ! :tada:`
       );
     }, ms(args[0]));
   },
