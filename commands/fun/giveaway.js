@@ -29,7 +29,7 @@ module.exports = {
     let Embed = new MessageEmbed()
       .setTitle(`:tada: New giveaway! :tada:`)
       .setDescription(
-        `**${prize}**!\n\nReact with :tada: to enter the giveaway!\nThis Giveaway is hosted by: ${message.author}`
+        `**${prize}**!\n\nReact with :tada: to enter the giveaway!\nThis Giveaway is hosted by: ${message.author}\nLook at the very bottom to see when the giveaway ends.`
       )
       .setTimestamp(Date.now() + ms(args[0]))
       .setColor(1752220);
