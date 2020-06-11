@@ -1,7 +1,7 @@
 const { MessageEmbed } = require("discord.js");
 const { formatDate } = require("../../functions");
 module.exports = {
-  name: "avatar",
+  name: "userinfo",
   description: "Get your own or someone else's user info.",
   usage: "[user mention]",
   category: "fun",
@@ -14,11 +14,11 @@ module.exports = {
       });
       Embed.setTitle(`Your info!`);
       Embed.setThumbnail(message.author.displayAvatarURL());
-      Embed.setColor(`RANDOM`);
+      Embed.setColor(1752220);
       Embed.setDescription(
-        `Joined: (MM/DD/YYYY) ${formatDate(message.member.joinedAt)}\nID: ${
+        `**Joined:** (MM/DD/YYYY) ${formatDate(message.member.joinedAt)}\n**User ID:** ${
           message.author.id
-        }\nRoles: ${roles}`
+        }\n**Roles:** ${roles}`
       );
       return message.channel.send(Embed);
     } else {
@@ -26,13 +26,13 @@ module.exports = {
       User.roles.cache.forEach((role) => {
         roles.push(role.name);
       });
-      Embed.setTitle(`${bot.users.cache.get(User.id).tag}'s info!!`);
+      Embed.setTitle(`${bot.users.cache.get(User.id).tag}'s info!`);
       Embed.setThumbnail(bot.users.cache.get(User.id).displayAvatarURL());
-      Embed.setColor(`RANDOM`);
+      Embed.setColor(1752220);
       Embed.setDescription(
-        `Joined: (MM/DD/YYYY) ${formatDate(User.joinedAt)}\nID: ${
+        `**Joined:** (MM/DD/YYYY) ${formatDate(User.joinedAt)}\n**User ID:** ${
           User.id
-        }\nRoles: ${roles}`
+        }\n**Roles:** ${roles}`
       );
       return message.channel.send(Embed);
     }
