@@ -8,6 +8,7 @@ module.exports={
         .setTitle('ChompBot Invite Link')
         .setDescription(`To invite ChompBot, click on this link below.\nhttps://iloveblueoreo.wixsite.com/chompbot`)
         .setFooter('Have fun with ChompBot! | A ChompBot Message.')
+        .setColor(1752220)
         message.channel.send(Embed)
     }
 }
