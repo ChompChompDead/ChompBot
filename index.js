@@ -27,6 +27,18 @@ bot.on('ready', () => {
     }, 10000); 
     console.log(`${bot.user.username} is now online!`)
 });
+
+bot.on('guildMemberAdd', member => {
+    const channel = member.guild.channels.find(channel => channel.name === "welcome", "welcomes")
+    if(!channel) return;
+
+    const Embed = new MessageEmbed()
+    .setTitle(`Welcome ${member} to ${guild}!`)
+    .setDescription(`Hello ${member}! Thanks for joining our server. Please read #rules and to get pings and roles go to #get-roles . We hope you have a great time here, see you soon!`)
+    .setColor(1752220)
+    message.channel.send(Embed)
+});
+
 bot.on('message', async message=>{
     if(message.author.bot) return;
     if(!message.content.startsWith(prefix)) return;
