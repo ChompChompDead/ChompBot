@@ -4,9 +4,9 @@ module.exports = {
   description: "Create a simple yes or no poll",
   category: "fun",
   run: async (bot, message, args) => {
-    if (!message.member.permissions.has("ADMINISTRATOR"))
+    if (!message.member.permissions.has("MANAGE_MESSAGES"))
       return message.channel.send(
-        `You do not have admin, ${message.author.username}`
+        `You do not permissions to do so, ${message.author.username}`
       );
     const channel =
       message.mentions.channels.first() ||
