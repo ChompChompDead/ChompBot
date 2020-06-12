@@ -1,7 +1,7 @@
 const {MessageEmbed} = require('discord.js')
 
 module.exports={
-    name: "help math",
+    name: "mathhelp",
     category: "info",
     description: "Help with math commands",
     run: async(bot,message,args)=>{
