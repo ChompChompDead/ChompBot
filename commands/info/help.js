@@ -13,7 +13,7 @@ module.exports={
         .addField('**⚒️ Moderation Commands:**', '`kick, ban`')
         .addField('**😀 Fun Commands:**', '`giveaway, 8ball, clownspam, meme, poll`')
         .setFooter('🤡A ChompBot Message | I am cool.🤡')
-        .addField('**🅰️ Text Commands 🅰️`, '`ascii`')
+        .addField('**🅰️ Text Commands 🅰️**', '`ascii`')
         .setColor(1752220)
         message.channel.send(Embed)
     }
