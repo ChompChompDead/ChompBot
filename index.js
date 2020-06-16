@@ -39,10 +39,6 @@ bot.on('message', async message=>{
     const command = bot.commands.get(cmd)
     if(!command) command = bot.commands.get(bot.aliases.get(cmd));
     if(command) command.run(bot,message,args)
-    
-    if(message.content === "uno") {
-       message.react('710204883806191666');
-    }
 })
 
 bot.login(process.env.token);
