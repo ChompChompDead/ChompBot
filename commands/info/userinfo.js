@@ -6,7 +6,7 @@ module.exports={
     run: async(bot,message,args)=>{
         const user = message.mentions.users.first() || message.author;
         let uEmbed = new Discord.MessageEmbed()
-        .setColor(`BLUE`)
+        .setColor(1752220)
         .setTitle("User Info")
         .setThumbnail(bot.users.cache.get(user.id).displayAvatarURL())
         .setAuthor(`${message.author.username}'s Info!`, bot.users.cache.get(user.id).displayAvatarURL())
