@@ -5,7 +5,7 @@ module.exports={
     description: "Someones info.",
     run: async(bot,message,args)=>{
         const user = message.mentions.users.first() || message.author;
-        let uEmbed = new Discord.MessageEmbed()
+        const uEmbed = new Discord.MessageEmbed()
         .setColor(1752220)
         .setTitle("User Info")
         .setThumbnail(bot.users.cache.get(user.id).displayAvatarURL())
