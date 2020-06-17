@@ -15,7 +15,7 @@ module.exports={
 
     const Embed = new Discord.MessageEmbed()
     .setTitle('Bot Uptime')
-    .setColor(`BLUE`)
+    .setColor(1752220)
     .addField('**🤖 My uptime is: 🤖**', `I have been online for: ${duration(bot.uptime)}`)
     message.channel.send(Embed)
 
