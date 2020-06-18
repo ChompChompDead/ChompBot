@@ -28,7 +28,7 @@ module.exports={
         }
 
         const Embed = new Discord.MessageEmbed()
-        .setColor(`BLUE`)
+        .setColor(1752220)
         .setTitle(`**__${message.author.username}__ has banned someone :wave:**`)
         .setDescription(`${message.author} has banned ${target} (${target.id})`)
         .setFooter(`Well, goodbye for them.`)
