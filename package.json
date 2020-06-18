@@ -18,6 +18,7 @@
     "imageapi.js": "^1.0.3",
     "memes-random": "^2.3.5",
     "moment": "^2.26.0",
+    "mongoose": "^5.9.19",
     "ms": "^2.1.2",
     "random-puppy": "^1.1.0",
     "superagent": "^5.2.2"
