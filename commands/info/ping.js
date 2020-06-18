@@ -1,14 +1,16 @@
-const {MessageEmbed} = require('discord.js')
+const Discord = require('discord.js')
+const bot = new Discord.Client()
+const MessageEmbed = require('discord.js')
+
 module.exports={
-    name: 'ping',
-    category: 'info',
-    description: 'Returns Latency and API Ping.',
+    name:'ping',
+    description:"Returns API and Latency Ping",
     run: async(bot,message,args)=>{
-        const msg = await message.channel.send('🏓 Pinging...')
-        const Embed = new MessageEmbed()
-        .setTitle('🏓 Pong!')
-        .setDescription(`Your Latency Ping is: ${msg.createdTimeStamp - message.createdTimeStamp}ms\nYour API Ping is: ${Math.round(bot.ws.ping)}ms.`)
-        .setColor(1752220)
+        const msg = await message.channel.send(`:ping_pong: Pinging...`)
+        const Embed = new Discord.MessageEmbed()
+        .setTitle(':ping_pong: Pong!')
+        .setDescription(`Your API Ping is: ${Math.round(bot.ws.ping)}ms\nYour Latency Ping is:  ${msg.createdTimestamp - message.createdTimestamp}ms`)
+        .setColor(`BLUE`)
         msg.edit(Embed)
     }
 }
