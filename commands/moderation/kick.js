@@ -28,7 +28,7 @@ module.exports={
         }
 
         const Embed = new Discord.MessageEmbed()
-        .setColor(`BLUE`)
+        .setColor(1752220)
         .setTitle(`**__${message.author.username}__ has kick someone :wave:**`)
         .setDescription(`${message.author} has kicked ${target} (${target.id})`)
         .setFooter(`Well, goodbye for them.`)
