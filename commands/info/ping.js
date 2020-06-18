@@ -10,7 +10,7 @@ module.exports={
         const Embed = new Discord.MessageEmbed()
         .setTitle(':ping_pong: Pong!')
         .setDescription(`Your API Ping is: ${Math.round(bot.ws.ping)}ms\nYour Latency Ping is:  ${msg.createdTimestamp - message.createdTimestamp}ms`)
-        .setColor(`BLUE`)
+        .setColor(1752220)
         msg.edit(Embed)
     }
 }
