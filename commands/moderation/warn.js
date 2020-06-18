@@ -5,6 +5,13 @@ module.exports={
     category: "moderation",
     usage: "<@user> <reason>",
     run: async(bot,message,args)=>{
+        if(!message.member.hasPermissions("KICK_MEMBERS")) {
+            return message.channel.send(`You do not have the correct permissions to do this command, ${message.author}.`)        
+        }
+        if(!message.member.me.hasPermissions("KICK_MEMBERS")) {
+            return message.channel.send(`You do not have the correct permissions to do this command, ${message.author}.`)        
+        }
+        
         let user = messgae.mentions.users.first()
         if(!user) return message.channel.send(`You need to mention a user, ${message.author}.`)
         if(!args.slice(1).join(" ")) return message.channel.send(`You need to have a reason to warn, ${message.author}. Why would you warn anyways?`)
