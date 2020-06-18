@@ -10,7 +10,7 @@ module.exports={
         .setTitle('**:clipboard:ChompBot Help Commands::clipboard:**')
         .setThumbnail('https://gyazo.com/69a62985db980a4902f76098e3571786.png')
         .addField('**ℹ️ Info commands: ℹ️**', '`ping, help, avatar, userinfo, botinvite, uptime, serverinfo`')
-        .addField('**⚒️ Moderation Commands: ⚒️**', '`kick, ban`')
+        .addField('**⚒️ Moderation Commands: ⚒️**', '`kick, ban, warn, warn`')
         .addField('**😀 Fun Commands: 😀**', '`giveaway, 8ball, clownspam, meme, poll`')
         .setFooter('🤡A ChompBot Message | I am cool.🤡')
         .addField('**🅰️ Text Commands 🅰️**', '`ascii`')
