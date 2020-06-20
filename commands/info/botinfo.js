@@ -8,7 +8,7 @@ module.exports={
         let bicon = 'https://i.gyazo.com/b93151f233d823846a2346f4f79ec5c9.png'
         let servsize = bot.guilds.cache.size
         let botembed = new Discord.MessageEmbed()
-        .setColor(`BLUE`)
+        .setColor(1752220)
         .setTitle('ℹ️ ChompBot\'s Info ℹ️ ')
         .setThumbnail(bicon)
         .addField("**General Info**",[
