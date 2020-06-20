@@ -5,7 +5,7 @@ module.exports={
     description:"Answers your questions!",
     usage: "<question>",
     run: async(bot,message,args)=>{
-        let question = message.content.split(bot.prefix.length+6)
+        let question = args.join(" ");
         if(!question){
             return message.reply('You did not specify your question.')
         } else{
