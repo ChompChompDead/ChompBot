@@ -15,9 +15,9 @@ bot.catergories = fs.readdirSync("./commands/");
 })
 const activities_list = [
     "BETA | c!help", 
-    "Version 0.1 | c!help",
-    "eating pancakes", 
-    "being a bot"
+    "Version 0.3 | c!help",
+    "with my bot friends", 
+    "use c!help already"
     ];
 
 bot.on('ready', () => {
