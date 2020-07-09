@@ -1,11 +1,11 @@
- const axios = require('axios');
+const axios = require('axios');
 const { MessageEmbed } = require('discord.js')
 
 module.exports = {
     name: "meme",
     category: "extra",
     run: async (client, message, args) => {
-        const url = 'https://some-random-api.ml/meme';
+        const url = 'https://api.imgflip.com/get_memes';
 
         let data, response;
         try {
