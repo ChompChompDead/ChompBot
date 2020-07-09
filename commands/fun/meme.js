@@ -1,19 +1,26 @@
-const { MessageEmbed } = require("discord.js");
-const api = require("imageapi.js");
+ const axios = require('axios');
+const { MessageEmbed } = require('discord.js')
+
 module.exports = {
-  name: "meme",
-  description: "Get a meme!",
-  category: "fun",
-  run: async (bot, message, args) => {
-    let subreddits = ["dankmemes","memes", "cleanmemes"];
-    let subreddit =
-      subreddits[Math.floor(Math.random() * subreddits.length - 1)];
-    let img = await api(subreddit);
-    const Embed = new MessageEmbed()
-      .setTitle(`A meme from r/${subreddit}`)
-      .setURL(`https://reddit.com/r/${subreddit}`)
-      .setColor("RANDOM")
-      .setImage(img);
-    message.channel.send(Embed);
-  },
-};
+    name: "meme",
+    category: "extra",
+    run: async (client, message, args) => {
+        const url = 'https://some-random-api.ml/meme';
+
+        let data, response;
+        try {
+            response = await axios.get(url);
+            data = response.data;
+        } catch (e) {
+            return message.channel.send(`An error has occured, try again!`)
+        }
+
+        const embed = new MessageEmbed()
+            .setTitle(`Random Meme: `)
+            .setDescription(data.caption)
+            .setColor('BLUE')
+            .setImage(data.image)
+
+        await message.channel.send(embed)
+    }
+}
