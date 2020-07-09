@@ -16,14 +16,14 @@ bot.catergories = fs.readdirSync("./commands/");
 const activities_list = [
     "BETA | c!help", 
     "Version 0.3 | c!help",
-    "with my bot friends", 
+    `${bot.guilds.cache.size} Servers and ${bot.users.cache.size} Users`, 
     "use c!help already"
     ];
 
 bot.on('ready', () => {
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
-        bot.user.setActivity(activities_list[index]);
+        bot.user.setActivity(activities_list[index],{ type: "WATCHING" });
     }, 10000); 
     console.log(`${bot.user.username} is now online!`)
 }); 
