@@ -19,7 +19,7 @@ module.exports = {
 
         const embed = new MessageEmbed()
             .setTitle(args[0] ? `${args[0].toUpperCase()} Stats` : 'Total COVID-19 Cases WorldWide')
-            .setColor(`BLUE`)
+            .setColor(1752220)
             .setThumbnail(args[0] ? corona.countryInfo.flag : 'https://i.gyazo.com/48668bcba583cfe1c67764bbe0076d62.png')
             .addFields(
                 {
