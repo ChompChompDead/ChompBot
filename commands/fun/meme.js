@@ -5,7 +5,7 @@ module.exports = {
     name: "meme",
     category: "extra",
     run: async (client, message, args) => {
-        const url = 'https://api.imgflip.com/get_memes';
+        const url = 'https://some-random-api.ml/meme';
 
         let data, response;
         try {
