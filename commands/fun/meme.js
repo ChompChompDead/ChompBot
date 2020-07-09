@@ -18,7 +18,7 @@ module.exports = {
         const embed = new MessageEmbed()
             .setTitle(`Random Meme: `)
             .setDescription(data.caption)
-            .setColor('BLUE')
+            .setColor(1752220)
             .setImage(data.image)
 
         await message.channel.send(embed)
