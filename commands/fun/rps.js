@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js')
-const { promptMessage } = require('../../function.js')
+const { promptMessage } = require('../../functions.js')
 
 const chooseArr = ['⛰️','📰','✂️'];
 
