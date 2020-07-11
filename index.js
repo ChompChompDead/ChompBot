@@ -15,8 +15,8 @@ bot.catergories = fs.readdirSync("./commands/");
 })
 const activities_list = [
     "BETA | c!help", 
-    "Version 0.3 | c!help",
-    `${bot.guilds.cache.size} Servers and ${bot.users.cache.size} Users`, 
+    "Version 0.7 | c!help",
+    `stop looking at this status NOW`, 
     "use c!help already"
     ];
 
