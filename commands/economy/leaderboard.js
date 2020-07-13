@@ -20,7 +20,7 @@ module.exports={
         .setThumbnail(bot.users.cache.get(message.author.id).displayAvatarURL())
         .setFooter(bot.user.username, bot.users.cache.get(message.author.id).displayAvatarURL())
         .setTimestamp()
-        .setColor(`BLUE`)
+        .setColor(1752220)
         message.channel.send(embed)
     }
 }
