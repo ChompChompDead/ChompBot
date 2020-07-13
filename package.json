@@ -21,6 +21,7 @@
     "moment": "^2.26.0",
     "mongoose": "^5.9.19",
     "ms": "^2.1.2",
+    "parse-ms": "^2.1.0",
     "quick.db": "^7.1.1",
     "random-puppy": "^1.1.0",
     "superagent": "^5.2.2"
