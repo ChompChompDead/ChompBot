@@ -26,9 +26,6 @@ module.exports={
 
             let jobs = ["Developer", "Farmer", "Astronaut", "Chef", "Doctor", "Scientist", "Janitor", "Shopkeeper", ""]
             let job = jobs[Math.floor(Math.random()* jobs.length)]
-
-            db.add(`money_${message.author.id}`, workedcash)
-            db.add(`workedWork_${message.author.id}`, Date.now())
             
             const Qembed = new MessageEmbed()
             .setTitle(`You worked!`)
@@ -38,6 +35,9 @@ module.exports={
             .setFooter(bot.user.username, bot.users.cache.get(user.id).displayAvatarURL())
             .setTimestamp()
             message.channel.send(Qembed)
+            
+            db.add(`money_${message.author.id}`, workedcash)
+            db.add(`workedWork_${message.author.id}`, Date.now())
         }
     }
 }
