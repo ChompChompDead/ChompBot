@@ -13,6 +13,7 @@ module.exports={
         .addField('**⚒️ Moderation Commands: ⚒️**', '`kick, ban, warn, resetwarns, warns`')
         .addField('**😀 Fun Commands: 😀**', '`giveaway, 8ball, clownspam, meme, poll, say, ascii, suggest, rps`')
         .addField('**🐕 Animal Commands 🐱**', '`dog, cat, bird, fox, koala, panda`')
+        .addField('**💵 Economy Commands 💵**', '`addcoins, balance, buy, daily, backpack, leaderboard, shop, work`')
         .setFooter('🤡A ChompBot Message | I am cool.🤡')
         .setColor(1752220)
         message.channel.send(Embed)
