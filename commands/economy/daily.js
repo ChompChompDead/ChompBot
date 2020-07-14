@@ -9,9 +9,8 @@ module.exports={
         let daily = await db.fetch(`daily_${message.author.id}`)
         let timeout = 86400000
         let amount = Math.floor(Math.random() * 600) +100
-        let money = db.fetch(`money_${user.id}`)
         let user = message.author;
-
+        let money = db.fetch(`money_${user.id}`)
         if(daily != null && timeout - (Date.now() - daily) > 0) {
             let time = ms(timeout - (Date.now() - daily));
             const Wembed = new MessageEmbed()
