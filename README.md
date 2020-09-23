@@ -1,3 +1,3 @@
 # ChompBot23
 
-# Invite ChompBot here: https://iloveblueoreo.wixsite.com/chompbot
+# Invite ChompBot here: http://chompbot.ml
