@@ -1,3 +1,2 @@
-# ChompBot23
-
-# Invite ChompBot here: http://chompbot.ml
+# ChompBot's Main Repo
+Invite ChompBot here: http://chompbot.ml
