@@ -30,14 +30,10 @@ You may ask: "Why isn't the bot already configured to use the token in my config
 <br>
 Replace
 <br>
-```js
-bot.login(process.env.token)
-```
+        bot.login(process.env.token)
 <br>
 With
 <br>
-```js
-bot.login(token)
-```
+        bot.login(token)
 <br>
 
