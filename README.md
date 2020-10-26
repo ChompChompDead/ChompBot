@@ -24,6 +24,7 @@ So anyways, i'm expecting that you have downloaded the files from chompbot or ju
 ```
 <br>
 <br>
+
 ## Step three: Making the bot use your token
 You may ask: "Why isn't the bot already configured to use the token in my config.json file?" It's because my hosting service uses the files directly from my github, so I had to change the files bot token directory and stuff. To change it, just replace these lines in the index.js file. 
 <br>
