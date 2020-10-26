@@ -42,6 +42,16 @@ With
 bot.login(token)
 ```
 
-## You are finished!
-After doing all of this, you are finally finished setting up chompbot. Chnage the code. Rewrite it. Do anything you want! 
+## Step four: Running the bot
+If you are an experienced developer, you can skip this part. But for newbies, this is how you can run your bot. You need to install [node.js](https://nodejs.org). Then, you need to get command prompt open in the folder the bot is in (for windows, go to file explorer, where your bot is located, shift + right click in the folder, and click on open powershell/command prompt.)
+
+After you have opened command prompt/powershell, you need to run this command in command prompt.
+
+```
+npm install ascii-tabke axios dateformat discord.js figlet fs imageapi.js memes-random moment mongoose ms parse-ms quick.db random-puppy superagent
+```
+
+Note that it might take a long time.
+
+When it is done installing, you should see the command prompt is now clear and nothing is installing anymore. Now, simply run `node index.js` or `node .` to run the bot.
 
