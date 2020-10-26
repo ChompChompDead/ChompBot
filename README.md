@@ -55,3 +55,6 @@ Note that it might take a long time.
 
 When it is done installing, you should see the command prompt is now clear and nothing is installing anymore. Now, simply run `node index.js` or `node .` to run the bot.
 
+## You are done!
+Congrats if you actually followed this trash tutorial. Good job to you! You can change the code, or just do anything with it. Have fun!
+
