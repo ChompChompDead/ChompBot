@@ -36,10 +36,12 @@ bot.login(process.env.token)
 <br>
 With
 <br>
+
 ```js
 // Basically replace the variable lol
 bot.login(token)
 ```
+
 <br>
 ## You are finished!
 After doing all of this, you are finally finished setting up chompbot. Chnage the code. Rewrite it. Do anything you want! 
