@@ -30,9 +30,13 @@ You may ask: "Why isn't the bot already configured to use the token in my config
 <br>
 Replace
 <br>
-![No picture :(](https://cdn.discordapp.com/attachments/697634291340804106/770338276191633408/unknown.png)
+```js
+bot.login(process.env.token)
+```
 <br>
 With
 <br>
-![No picture :(](https://cdn.discordapp.com/attachments/697634291340804106/770338743147429908/unknown.png)
+```js
+bot.login(token)
+```
 
