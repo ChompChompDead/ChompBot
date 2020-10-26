@@ -37,6 +37,7 @@ bot.login(process.env.token)
 With
 <br>
 ```js
+// Basically replace the variable lol
 bot.login(token)
 ```
 <br>
