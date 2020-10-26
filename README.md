@@ -37,6 +37,6 @@ bot.login(process.env.token)
 With
 <br>
 ```js
-bot.login(token)
+bot.logi(token)
 ```
 
