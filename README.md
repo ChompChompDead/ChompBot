@@ -48,7 +48,7 @@ If you are an experienced developer, you can skip this part. But for newbies, th
 After you have opened command prompt/powershell, you need to run this command in command prompt.
 
 ```
-npm install ascii-tabke axios dateformat discord.js figlet fs imageapi.js memes-random moment mongoose ms parse-ms quick.db random-puppy superagent
+npm install ascii-table axios dateformat discord.js figlet fs imageapi.js memes-random moment mongoose ms parse-ms quick.db random-puppy superagent
 ```
 
 Note that it might take a long time.
