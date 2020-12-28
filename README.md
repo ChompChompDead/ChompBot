@@ -51,6 +51,12 @@ After you have opened command prompt/powershell, you need to run this command in
 npm install ascii-table axios dateformat discord.js figlet fs imageapi.js memes-random moment mongoose ms parse-ms quick.db random-puppy superagent
 ```
 
+**OR** you could just run a simple,
+
+```
+npm install
+```
+
 Note that it might take a long time.
 
 When it is done installing, you should see the command prompt is now clear and nothing is installing anymore. Now, simply run `node index.js` or `node .` to run the bot.
